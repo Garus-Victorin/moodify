@@ -1,0 +1,60 @@
+name: moodify
+description: Un lecteur musical Android moderne, rapide et entièrement hors ligne.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Audio
+  just_audio: ^0.10.6
+  audio_service: ^0.18.12
+  audio_session: ^0.2.4
+  on_audio_query: ^2.9.0
+
+  # State management
+  riverpod_annotation: ^2.3.5
+  flutter_riverpod: ^2.4.9
+
+  # Navigation
+  go_router: ^17.3.0
+
+  # UI & Animations
+  material_color_utilities: ^0.13.0
+  cached_network_image: ^3.3.1
+  flutter_animate: ^4.5.0
+
+  # Local storage (SQLite via Drift)
+  drift: ^2.9.0
+  drift_flutter: ^0.1.0
+
+  # Utilities
+  uuid: ^4.3.3
+  path: ^1.8.0
+  path_provider: ^2.1.2
+  permission_handler: ^12.0.3
+  share_plus: ^13.2.1
+  intl: ^0.20.3
+  collection: ^1.18.0
+  meta: ^1.11.0
+  logger: ^2.0.2+1
+  rxdart: ^0.28.0
+  expandable: ^5.0.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  build_runner: ^2.4.8
+  drift_dev: ^2.15.0
+  riverpod_generator: ^2.3.9
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/images/
